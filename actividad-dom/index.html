@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad dom</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Actividad: Manipulación del DOM</h1>
+    </header>
+    
+    <main>
+        <!-- Ejercicio 1: Registro de Estudiante -->
+        <section class="ejercicio">
+            <h2>Ejercicio 1: Registro de Estudiante</h2>
+            <form id="formEstudiante">
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="2">
+                </div>
+                
+                <div class="campo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required min="14" max="100">
+                </div>
+                
+                <div class="campo">
+                    <label for="curso">Curso:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Seleccione un curso</option>
+                        <option value="3° Medio">3° Medio</option>
+                        <option value="4° Medio">4° Medio</option>
+                    </select>
+                </div>
+                
+                <div class="campo">
+                    <label>Jornada:</label>
+                    <div class="opciones-radio">
+                        <label>
+                            <input type="radio" name="jornada" value="Mañana" required> Mañana
+                        </label>
+                        <label>
+                            <input type="radio" name="jornada" value="Tarde"> Tarde
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="campo">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="aceptaReglamento" name="aceptaReglamento" required>
+                        Acepto el reglamento estudiantil
+                    </label>
+                </div>
+                
+                <div class="botones">
+                    <button type="submit">Registrar Estudiante</button>
+                    <button type="button" id="limpiarEstudiante">Limpiar Formulario</button>
+                </div>
+            </form>
+            
+            <div class="resultados">
+                <p class="resultado" aria-live="polite"></p>
+                <p class="error" aria-live="assertive"></p>
+                <div class="resumen-jornadas">
+                    <h3>Resumen por Jornada</h3>
+                    <p id="resumenJornadas"></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ejercicio 2: Calculadora de Promedio de Notas -->
+        <section class="ejercicio">
+            <h2>Ejercicio 2: Calculadora de Promedio de Notas</h2>
+            <form id="formNotas">
+                <div class="campo">
+                    <label for="nota">Nota (1.0 - 7.0):</label>
+                    <input type="number" id="nota" name="nota" step="0.1" min="1.0" max="7.0" required>
+                </div>
+                
+                <div class="botones">
+                    <button type="button" id="agregarNota">Agregar Nota</button>
+                    <button type="button" id="calcularPromedio">Calcular Promedio</button>
+                    <button type="button" id="eliminarUltima">Eliminar Última</button>
+                    <button type="button" id="borrarPromedio">Borrar Promedio</button>
+                    <button type="button" id="limpiarTodo">Limpiar Todo</button>
+                </div>
+            </form>
+            
+            <div class="notas-agregadas">
+                <h3>Notas ingresadas:</h3>
+                <ul id="listaNotas"></ul>
+            </div>
+            
+            <div class="resultados">
+                <p class="resultado" aria-live="polite"></p>
+                <p class="error" aria-live="assertive"></p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="static/js/main.js"></script>
+</body>
+</html>

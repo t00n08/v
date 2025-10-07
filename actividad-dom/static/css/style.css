@@ -1,0 +1,259 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark blue header */
+    color: #ecf0f1; /* Light text */
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main Content Area */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+/* Section Styles */
+.ejercicio {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ejercicio h2 {
+    color: #3498db; /* Medium blue for section titles */
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Form Styles */
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e; /* Darker gray for labels */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Radio Button Styles */
+.opciones-radio {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.opciones-radio label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.opciones-radio input[type="radio"] {
+    accent-color: #3498db;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Checkbox Styles */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    accent-color: #3498db;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Button Styles */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-grow: 1; /* Allows buttons to grow and fill space */
+    min-width: 120px; /* Minimum width for buttons */
+}
+
+button[type="submit"],
+button#agregarNota,
+button#calcularPromedio {
+    background-color: #2ecc71; /* Green */
+    color: white;
+}
+
+button[type="submit"]:hover,
+button#agregarNota:hover,
+button#calcularPromedio:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+button[type="button"],
+button#limpiarEstudiante,
+button#eliminarUltima,
+button#borrarPromedio,
+button#limpiarTodo {
+    background-color: #e74c3c; /* Red */
+    color: white;
+}
+
+button[type="button"]:hover,
+button#limpiarEstudiante:hover,
+button#eliminarUltima:hover,
+button#borrarPromedio:hover,
+button#limpiarTodo:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Results and Summary Styles */
+.resultados {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.resultados .resultado {
+    color: #27ae60; /* Green for success messages */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.resultados .error {
+    color: #c0392b; /* Red for error messages */
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.resumen-jornadas {
+    text-align: center;
+    border-top: 1px dashed #ccc;
+    padding-top: 15px;
+}
+
+.resumen-jornadas h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+#resumenJornadas {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Styles for Exercise 2 */
+.notas-agregadas {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.notas-agregadas h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+#listaNotas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#listaNotas li {
+    background-color: #e0e0e0; /* Light gray for list items */
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    button {
+        flex-grow: 0; /* Prevent buttons from growing too much on small screens */
+        width: 100%;
+    }
+}

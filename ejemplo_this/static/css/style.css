@@ -1,0 +1,114 @@
+v
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 130vh;
+    width: 130vh;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.sea{
+  border: black solid 2px;
+}
+
+.nav {
+    display: flex;
+    background-color: #cccccc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.log {
+    border: black solid 1px;
+    color: white;
+    padding: 4px 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: black 4px 4px;
+}
+
+.log:hover {
+    background-color: #0056b3;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.nin{
+    flex: 7;
+    margin-right: 6vh;
+}
+
+.you{
+    display: flex;
+    flex: 3;
+    height: 17vh;
+    padding: 4vh 3vh;
+    justify-content: center;
+    border: solid black 3px;
+}
+
+.you h2{
+    font-size: 3.5vh;
+}
+
+.you button{
+    flex: 1;
+    width: 28vh;
+    background-color: #93C47D;
+    box-shadow: 2px 2px black;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+.arriba{
+    display: flex;
+    flex-direction: row;
+    border: solid black 3px;
+    margin-bottom: 2vh;
+    padding: 1vh;
+    align-items: center;
+}
+
+.likes{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-right: 4vh;
+}
+
+.likes p{
+    font-size: 2vh;
+}
+
+.likes button{
+    background-color: #FFD966;
+    padding: 0.5vh 1.5vh;
+    margin-top: 2vh;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+}
+
+.arriba p{
+    flex: 5;
+}
+
+.del{
+  margin: 3vh;
+}

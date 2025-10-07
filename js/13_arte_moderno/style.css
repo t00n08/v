@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+div{
+    margin: 7px;
+}
+
+.container{
+    width: 40%;
+    height: 100vh;
+}
+
+.sectionuno{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.uno{
+    display: flex;
+    width: 75%;
+    height: 50vh;
+    flex-direction: column;
+}
+
+.dos{
+    flex: 2;
+    background-color: #B2B5B4;
+}
+.tres{
+    flex: 1;
+    background-color: #B2B5B4;
+}
+
+.cuatro{
+    display: flex;
+    width: 30%;
+    height: 50vh;
+    flex-direction: column;
+}
+
+.cinco{
+    flex: 1;
+    background-color: #B2B5B4;
+}
+
+.seis{
+    flex: 1;
+    background-color: #B2B5B4;
+}
+
+.sectiontres{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.siete{
+    width: 35%;
+    height: 48vh;
+    background-color: #b2b5b4;
+}
+
+.ocho{
+    display: flex;
+    width: 65%;
+    height: 49vh;
+    flex-direction: column; 
+}
+
+.nueve{
+    flex:1;
+    background-color: #b2b5b4;
+}
+
+.diez{
+    flex: 1;
+    background-color: #b2b5b4;
+}
