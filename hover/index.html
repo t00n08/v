@@ -18,7 +18,7 @@
         <div class="nav-container">
             <h1>VideoLab</h1>
             <input type="text" placeholder="Search" name="query" class="search">
-            <button class="log">Login</button>
+            <button onclick="turnOff(this)" class="log">Login</button>
         </div>
     </div>
 
@@ -30,12 +30,8 @@
 
             <!-- this is a placeholder replace it with a real video -->
             <figure class="placeholder">
-                <svg style="text-anchor:middle;" width="720" height="400" xmlns="http://www.w3.org/2000/svg" role="img"
-                    aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#868e96"></rect>
-                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6">Replace Me!</text>
-                </svg>
+                <video id="video_Main" loop controls src="resources/video/3191574-uhd_3840_2160_25fps.mp4" width="720" height="400" >
+            </video>
             </figure>
 
             <!-- video info -->
@@ -59,30 +55,30 @@
             <h3 class="sub-header">Up Next</h3>
 
             <div class="video-small">
-                <video src="resources/video/2759484-uhd_3840_2160_30fps.mp4" alt="video placeholder"controls loop class="vid-s">
-                <span class="video-title">Not a Rick Roll</span>
+                <video id="in" onclick="cambioVideo(this)" src="resources/video/2759484-uhd_3840_2160_30fps.mp4" onmouseover="this.play()" onmouseout="this.pause()" alt="video placeholder" loop class="vid-s"></video>
+                <span id="in" class="video-title">Relax 100%</span>
             </div>
 
             <div class="video-small">
-                <video src="resources/video/3191572-uhd_3840_2160_25fps.mp4" alt="video placeholder"controls  loop class="vid-s">
-                <span class="video-title">10 Facts About ET's Cat!</span>
+                <video id="in" onclick="cambioVideo(this)"src="resources/video/3191572-uhd_3840_2160_25fps.mp4" alt="video placeholder" onmouseover="this.play()" onmouseout="this.pause()" loop class="vid-s"></video>
+                <span class="video-title">Adn girando</span>
             </div>
 
             <div class="video-small">
-                <video src="resources/video/4878912-uhd_3840_2160_24fps.mp4" alt="video placeholder" controls  loop class="vid-s">
-                <span class="video-title">5 Cosplay Tips</span>
+                <video  id="in"onclick="cambioVideo(this)"src="resources/video/4878912-uhd_3840_2160_24fps.mp4" alt="video placeholder" onmouseover="this.play()" onmouseout="this.pause()"  loop class="vid-s"></video>
+                <span class="video-title">   montaña</span>
             </div>
 
             <div class="video-small">
-                <video src="resources/video/856996-hd_1920_1080_24fps.mp4" alt="video placeholder"controls   loop class="vid-s">
-                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+                <video id="in" onclick="cambioVideo(this)"src="resources/video/856996-hd_1920_1080_24fps.mp4" alt="video placeholder" onmouseover="this.play()" onmouseout="this.pause()" loop class="vid-s"></video>
+                <span class="video-title">Iso ulti</span>
             </div>
 
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
 
 </html
