@@ -17,39 +17,64 @@
     <div class="top">
         <div class="nav-container">
             <h1>DojoWeather</h1>
+            <div class="or">
             <p>Burbank</p>
             <p>Chicago</p>
             <p>Dallas</p>
+            </div>
         </div>
     </div>
 
     <div class="sanj">
-    <h3>San Jose</h3>
+        <h3>San Jose</h3>
+        <div class="cc">
+        <label for="conversion" class="form-label fw-semibold">show temperature in</label>
+                <select id="conversion" class="form-select w-auto d-inline-block" onchange="convertir()">
+                    <option value="">°C</option>
+                    <option value="cm">°F</option>
+                </select>
+                </div>
     </div>
-
     <div class="grande">
 
         <div class="clima">
             <h2>today</h2>
             <img src="resources/img/some_rain.png" alt="lluvia">
             <p>some rain</p>
+            <div class="dii">
+            <div id="fa" class="rr"><p>24°</p></div>
+            <div id="fa" class="aa"><p>18°</p></div>
+            </div>
         </div>
         <div class="clima">
             <h2>today</h2>
             <img src="resources/img/some_sun.png" alt="lluvia">
             <p>some sun</p>
+            <div class="dii">
+            <div id="fa" class="rr"><p>27°</p></div>
+            <div id="fa" class="aa"><p>19°</p></div>
+            </div>
         </div>
         <div class="clima">
             <h2>today</h2>
             <img src="resources/img/some_clouds.png" alt="lluvia">
             <p>some clouds</p>
+            <div class="dii">
+            <div id="fa" class="rr"><p>21°</p></div>
+            <div id="fa" class="aa"><p>16°</p></div>
+            </div>
         </div>
         <div class="clima">
             <h2>today</h2>
             <img src="resources/img/some_sun.png" alt="lluvia">
             <p>some sun</p>
+            <div  class="dii">
+            <div id="fa" class="rr"><p>26°</p></div>
+            <div id="fa" class="aa"><p>21°</p></div>
+            </div>
         </div>
     </div>
 
 
 </body>
+<script src="static/js/script.js">

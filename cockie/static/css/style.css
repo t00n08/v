@@ -1,18 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    outline: black 1px solid;
+    outline: solid black 1px;
 }
 
 body {
     display: flex;
     align-content: center;
-    flex-direction: column;
-    height: 200vh;
-    width: 200vh;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f3f3;
+    flex-direction: column; 
+    font-family: 'comic sans ms',cursive, sans-serif ;
+    background-color: white;
 }
 
 .nav-container {
@@ -20,9 +17,12 @@ body {
     background-color: #9FC5F8;
     align-items: center;
     justify-content: space-around;
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     margin-bottom: 5vh;
     color: white;
+    width: 100%;
+
 }
 
 .grande {
@@ -47,4 +47,42 @@ img {
     border-radius: 50vh;
 
     height: 20vh;
+}
+
+.sanj{
+    display: flex;
+    margin-left: 10vh; 
+    margin-right: 10vh;
+    border-bottom: black 1px solid;
+    padding: 2vh;
+    justify-content: space-between;
+}
+
+.dii{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 15vh;
+}
+
+.rr{
+    color: red;
+}
+
+.aa{
+    color: blue;
+}
+
+.cc{
+    display: flex;
+    justify-content: end ;
+}
+
+.or{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 40vh;
+    margin-right: 4vh;
+    margin-left: 50vh;
 }
