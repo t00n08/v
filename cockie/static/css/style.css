@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: solid black 1px;
-}
+    }
 
 body {
     display: flex;
@@ -10,6 +9,7 @@ body {
     flex-direction: column; 
     font-family: 'comic sans ms',cursive, sans-serif ;
     background-color: white;
+    justify-content: center;
 }
 
 .nav-container {
@@ -85,4 +85,41 @@ img {
     width: 40vh;
     margin-right: 4vh;
     margin-left: 50vh;
+}
+
+.ga{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gga{
+    display: flex;
+    border: 2px black solid;
+    width: 90%;
+
+}
+
+.grande{
+    display: flex;
+    align-items: center;
+}
+
+.log {
+    border: black solid 1px;
+    color: rgb(0, 0, 0);
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    cursor: pointer;
+    background-color: #9FC5F8;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: black 4px 4px;
+    width: 10vh;
+    height: 5vh;
+}
+
+.log:hover {
+    background-color: #7fb5fc;
 }
